@@ -1,0 +1,5 @@
+outs:
+- md5: 429aaed41781067740051473c8574cf4 # pragma: allowlist secret
+  size: 975
+  hash: md5
+  path: model.joblib
