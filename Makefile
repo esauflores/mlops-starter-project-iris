@@ -75,3 +75,10 @@ run-pipeline: ## Run the complete ML pipeline
 	python src/split_dataset.py --test_size 0.2
 	python src/train.py
 	python src/evaluate.py
+
+run-pipeline-log:
+	@echo "Running ML pipeline with logging..."
+	uv run python src/load_data.py
+	uv run python src/split_dataset.py --test_size 0.2
+	uv run python src/train_evaluate_log.py
+	@echo "ML pipeline completed with logging."
